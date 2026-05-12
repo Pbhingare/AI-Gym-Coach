@@ -3,3 +3,4 @@
 venv/
 __pycache__/
 *.pyc 
+LandingPage/videos_add_your_own/ 
