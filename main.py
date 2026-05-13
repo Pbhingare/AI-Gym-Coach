@@ -16,15 +16,6 @@ from services.coaching.llm import LLMCoach
 from services.coaching.tts import TextToSpeech
 from services.coaching.voice_pipeline import VoicePipeline, autoplay_audio 
 
-st.markdown("""
-<style>
-[data-testid="stBottom"] {display: none !important;}
-[class*="viewerBadge"] {display: none !important;}
-[class*="badge"] {display: none !important;}
-footer {display: none !important;}
-iframe[src*="streamlit"] {display: none !important;}
-</style>
-""", unsafe_allow_html=True)
 
 def main(): 
     st.set_page_config( 
@@ -33,16 +24,7 @@ def main():
         initial_sidebar_state="expanded",
         layout="centered"
     ) 
-st.markdown("""
-<style>
-[data-testid="stBottom"] {display: none !important;}
-[class*="viewerBadge"] {display: none !important;}
-[class*="badge"] {display: none !important;}
-footer {display: none !important;}
-iframe[src*="streamlit"] {display: none !important;}
-</style>
-""", unsafe_allow_html=True) 
-    
+ 
     load_css(os.path.join(os.getcwd(), "static", "style.css"))
     inject_local_font(os.path.join(os.getcwd(), "static", "AdobeClean.otf"), "AdobeClean")
 
