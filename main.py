@@ -16,7 +16,14 @@ from services.coaching.llm import LLMCoach
 from services.coaching.tts import TextToSpeech
 from services.coaching.voice_pipeline import VoicePipeline, autoplay_audio 
 
-
+st.markdown("""
+<style>
+.viewerBadge_container__1QSob {display: none !important;}
+.viewerBadge_link__qRIco {display: none !important;}
+[data-testid="stAppViewBlockContainer"] footer {display: none !important;}
+footer {visibility: hidden !important;}
+</style>
+""", unsafe_allow_html=True) 
 
 def main(): 
     st.set_page_config( 
