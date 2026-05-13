@@ -6,16 +6,7 @@ pandas==2.2.3
 groq>=0.12.0
 gtts==2.5.3
 python-dotenv==1.2.2
+pyttsx3==2.90
+pygame==2.5.2
+numpy==1.26.4
 
-# AI Voice Trainer - Requirements
-# Run: pip install -r requirements.txt
-
-# Core voice libraries
-pyttsx3==2.90          # Offline voice (no internet needed)
-gTTS==2.5.1            # Online voice (Google TTS - better quality)
-pygame==2.5.2          # Audio playback for gTTS
-
-# Pose Detection (if not already installed)
-opencv-python==4.9.0.80
-mediapipe==0.10.11 
-numpy==1.26.4 
