@@ -32,7 +32,14 @@ def main():
         initial_sidebar_state="expanded",
         layout="centered"
     ) 
-
+    st.markdown("""
+<style>
+[data-testid="stBottom"] {display: none !important;}
+.viewerBadge_container__1QSob {display: none !important;}
+footer {display: none !important;}
+</style>
+""", unsafe_allow_html=True)
+    
     load_css(os.path.join(os.getcwd(), "static", "style.css"))
     inject_local_font(os.path.join(os.getcwd(), "static", "AdobeClean.otf"), "AdobeClean")
 
